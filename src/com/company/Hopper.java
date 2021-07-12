@@ -7,7 +7,13 @@ public class Hopper {
         this.fillLvl = fillLvl;
     }
 
-    public void Dispense(String flavor, int amt) {
+
+    public void fill(String flavorName, int bagVol) {
+        fillLvl += bagVol;
+
+    }
+
+    public void dispense(String flavor, int amt) {
 
         fillLvl -= amt;
         System.out.println(fillLvl);
