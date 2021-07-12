@@ -6,12 +6,12 @@ public class Dispenser {
 
 
     public Dispenser(){
-        hopper03 = new Hopper(3);
+        hopper03 = new Hopper();
     }
 
-    public void serveIceCream(String flavorName, int serveAmt) {
+    public void serveIceCream(String flavorName, double serveAmt) {
         hopper03.dispense(flavorName, serveAmt);
-        System.out.printf("you served %doz of delicious %s ice cream.", serveAmt, flavorName);
+        System.out.printf("you served %.1foz of delicious %s ice cream.\n", serveAmt, flavorName);
     }
 
 }
