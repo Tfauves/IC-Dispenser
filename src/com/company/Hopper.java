@@ -1,11 +1,11 @@
 package com.company;
 
-public class Hopper {
-    public static double fillLvl;
+    public class Hopper {
+    public double fillLvl;
 
-//    public Hopper(int fillLvl) {
-//        this.fillLvl = fillLvl;
-//    }
+    public Hopper(double fillLvl) {
+        this.fillLvl = fillLvl;
+    }
 
     public void fill(String flavorName, double bagVolGal) {
         double toOunces = 128;
