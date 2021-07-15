@@ -11,8 +11,8 @@ public class Dispenser {
     }
 
     public void serveIceCream(String flavorName, double serveAmt) {
-        hopper.dispense(flavorName, serveAmt);
         System.out.printf("you served %.1foz of delicious %s ice cream.\n", serveAmt, flavorName);
+        hopper.dispense(flavorName, serveAmt);
     }
 
 }

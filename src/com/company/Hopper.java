@@ -11,7 +11,7 @@ package com.company;
         double toOunces = 128;
         double bagGalToOunces = bagVolGal * toOunces;
         fillLvl += bagGalToOunces;
-        System.out.println(fillLvl);
+//        System.out.println(fillLvl);
 
     }
 
@@ -25,7 +25,7 @@ package com.company;
     public void dispense(String flavor, double amt) {
 
         fillLvl = fillLvl - amt;
-        System.out.println(fillLvl);
+        System.out.println("Current amount left to serve: \n" + fillLvl);
     }
 
 }
