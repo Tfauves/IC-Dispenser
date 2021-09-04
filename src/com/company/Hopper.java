@@ -15,6 +15,14 @@ package com.company;
 
     }
 
+    public void fill(Ice_Cream ice_cream ) {
+        double toOunces = 128;
+        double bagGalToOunces = ice_cream.bagVol * toOunces;
+        fillLvl += bagGalToOunces;
+//        System.out.println(fillLvl);
+
+    }
+
 
 
 //    public void fill(String flavorName, int bagVol) {
